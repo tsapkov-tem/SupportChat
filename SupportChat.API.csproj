@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>5ecc0805-af83-4f96-b2f7-28408f24a143</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SupportChat.Core.Data.Contracts\**" />
+    <Compile Remove="SupportChat.Core.Data.Entities\**" />
+    <Compile Remove="SupportChat.Core.Data.Repositories\**" />
+    <Compile Remove="SupportChat.Core.Data.Services\**" />
+    <Compile Remove="SupportChat.Core.Data\**" />
+    <Compile Remove="SupportChat.Core\**" />
+    <Content Remove="SupportChat.Core.Data.Contracts\**" />
+    <Content Remove="SupportChat.Core.Data.Entities\**" />
+    <Content Remove="SupportChat.Core.Data.Repositories\**" />
+    <Content Remove="SupportChat.Core.Data.Services\**" />
+    <Content Remove="SupportChat.Core.Data\**" />
+    <Content Remove="SupportChat.Core\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data.Contracts\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data.Entities\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data.Repositories\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data.Services\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data\**" />
+    <EmbeddedResource Remove="SupportChat.Core\**" />
+    <None Remove="SupportChat.Core.Data.Contracts\**" />
+    <None Remove="SupportChat.Core.Data.Entities\**" />
+    <None Remove="SupportChat.Core.Data.Repositories\**" />
+    <None Remove="SupportChat.Core.Data.Services\**" />
+    <None Remove="SupportChat.Core.Data\**" />
+    <None Remove="SupportChat.Core\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="SupportChat.Core.Data.Services\SupportChat.Core.Data.Services.csproj" />
+    <ProjectReference Include="SupportChat.Core.Data\SupportChat.Core.Data.csproj" />
+  </ItemGroup>
+
+</Project>

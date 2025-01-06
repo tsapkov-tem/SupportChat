@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat", "SupportChat.csproj", "{F2AC19F8-0925-4DD4-A063-391E709E0B25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.API", "SupportChat.API.csproj", "{F2AC19F8-0925-4DD4-A063-391E709E0B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core", "SupportChat.Core\SupportChat.Core.csproj", "{8F3FC868-24AE-4487-8663-933470912719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core.Data", "SupportChat.Core.Data\SupportChat.Core.Data.csproj", "{909A046C-5BA1-428F-9323-6595EA6A50A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core.Data.Contracts", "SupportChat.Core.Data.Contracts\SupportChat.Core.Data.Contracts.csproj", "{238462E2-DFB9-42CF-963A-84F296A94958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core.Data.Entities", "SupportChat.Core.Data.Entities\SupportChat.Core.Data.Entities.csproj", "{E8528F3C-FE02-4ADF-8816-0AD689A095A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core.Data.Repositories", "SupportChat.Core.Data.Repositories\SupportChat.Core.Data.Repositories.csproj", "{949975CC-5FF4-49F5-9F74-3D53A927FF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportChat.Core.Data.Services", "SupportChat.Core.Data.Services\SupportChat.Core.Data.Services.csproj", "{3B8ED257-D6D6-402D-A68E-A69CA67142B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{F2AC19F8-0925-4DD4-A063-391E709E0B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AC19F8-0925-4DD4-A063-391E709E0B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AC19F8-0925-4DD4-A063-391E709E0B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3FC868-24AE-4487-8663-933470912719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3FC868-24AE-4487-8663-933470912719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3FC868-24AE-4487-8663-933470912719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3FC868-24AE-4487-8663-933470912719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909A046C-5BA1-428F-9323-6595EA6A50A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909A046C-5BA1-428F-9323-6595EA6A50A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909A046C-5BA1-428F-9323-6595EA6A50A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909A046C-5BA1-428F-9323-6595EA6A50A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238462E2-DFB9-42CF-963A-84F296A94958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238462E2-DFB9-42CF-963A-84F296A94958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238462E2-DFB9-42CF-963A-84F296A94958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238462E2-DFB9-42CF-963A-84F296A94958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8528F3C-FE02-4ADF-8816-0AD689A095A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8528F3C-FE02-4ADF-8816-0AD689A095A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8528F3C-FE02-4ADF-8816-0AD689A095A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8528F3C-FE02-4ADF-8816-0AD689A095A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949975CC-5FF4-49F5-9F74-3D53A927FF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949975CC-5FF4-49F5-9F74-3D53A927FF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949975CC-5FF4-49F5-9F74-3D53A927FF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949975CC-5FF4-49F5-9F74-3D53A927FF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B8ED257-D6D6-402D-A68E-A69CA67142B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8ED257-D6D6-402D-A68E-A69CA67142B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8ED257-D6D6-402D-A68E-A69CA67142B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8ED257-D6D6-402D-A68E-A69CA67142B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
