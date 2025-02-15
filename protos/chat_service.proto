@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+options csharp_namespace = "SupportChat";
+
+message JsonReply {
+	string json_data = 1;
+}

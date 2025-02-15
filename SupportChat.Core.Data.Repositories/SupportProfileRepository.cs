@@ -5,7 +5,7 @@ using SupportChat.Core.Data.Entities.Models;
 
 namespace SupportChat.Core.Data.Repositories
 {
-    internal class SupportProfileRepository(DataBaseContext dataBaseContext) : ISupportProfileRepository
+    public class SupportProfileRepository(DataBaseContext dataBaseContext) : ISupportProfileRepository
     {
         private readonly DataBaseContext DataBaseContext = dataBaseContext;
         public int Create(SupportProfile entity)
