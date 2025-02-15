@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+  	<Protobuf Include="Protos\chat_service.proto" GrpcServices="Server" />
+  </ItemGroup>
+	
+  <ItemGroup>
     <Compile Remove="SupportChat.Core.Data.Contracts\**" />
     <Compile Remove="SupportChat.Core.Data.Entities\**" />
     <Compile Remove="SupportChat.Core.Data.Repositories\**" />
@@ -37,6 +41,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.29.3" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.67.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
   </ItemGroup>
 
