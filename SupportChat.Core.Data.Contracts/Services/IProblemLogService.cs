@@ -4,5 +4,6 @@ namespace SupportChat.Core.Data.Contracts.Services
 {
     public interface IProblemLogService : IBaseService<ProblemLog>
     {
+        public IEnumerable<ProblemLog> GetAllWithIncludedEntities();
     }
 }

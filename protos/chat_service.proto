@@ -1,7 +1,64 @@
+
 syntax = "proto3";
 
-options csharp_namespace = "SupportChat";
+option csharp_namespace = "SupportChat.API";
 
-message JsonReply {
-	string json_data = 1;
+package support;
+
+message Problem {
+	string id = 1;
+	string start_message = 2;
+	string problem_status = 3;
+	string problem_evaluation = 4;
+}
+
+message ProblemLog {
+	string id = 1;
+	string code = 2;
+	string support_name = 3;
+	string support_type = 4;
+	string problem_evaluation = 5;
+}
+
+message SupportInChat {
+	string id = 1;
+	string temp_name = 2;
+	string name = 3;
+}
+
+message Error { 
+	string text = 1;
+	bool critical = 2;
+}
+
+message SupportTypeRequest {
+	string support_type = 1;
+}
+
+message LogsList {
+	repeated ProblemLog logs = 1;
+}
+
+message LogsListResponse {
+	oneof result {
+		LogsList log_list = 1; 
+		Error error = 2;
+	}
+}
+
+message ProblemList {
+	repeated Problem problems = 1;
+}
+
+message ProblemListResponse {
+	oneof result {
+		ProblemList problem_list = 1;
+		Error error = 2;
+	}
+}
+
+
+service ChatService {
+	rpc GetLogsList(SupportTypeRequest) returns (LogsListResponse);
+	rpc GetProblemList(SupportTypeRequest) returns (ProblemListResponse);
 }
