@@ -38,8 +38,9 @@ namespace SupportChat.Core.Data
         {
             var dbFilePath = Path.GetTempFileName();
             optionsBuilder.UseSqlite(
-                    $"Data Source={dbFilePath}"
-                );
+                $"Data Source={dbFilePath}",
+                b => b.MigrationsAssembly("SupportChat.Core.Data.Migrations.Sqlite")
+            );
         }
     }
 }

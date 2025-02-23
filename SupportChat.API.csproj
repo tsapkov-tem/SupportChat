@@ -12,24 +12,28 @@
   <ItemGroup>
     <Compile Remove="SupportChat.Core.Data.Contracts\**" />
     <Compile Remove="SupportChat.Core.Data.Entities\**" />
+    <Compile Remove="SupportChat.Core.Data.Migrations.Sqlite\**" />
     <Compile Remove="SupportChat.Core.Data.Repositories\**" />
     <Compile Remove="SupportChat.Core.Data.Services\**" />
     <Compile Remove="SupportChat.Core.Data\**" />
     <Compile Remove="SupportChat.Core\**" />
     <Content Remove="SupportChat.Core.Data.Contracts\**" />
     <Content Remove="SupportChat.Core.Data.Entities\**" />
+    <Content Remove="SupportChat.Core.Data.Migrations.Sqlite\**" />
     <Content Remove="SupportChat.Core.Data.Repositories\**" />
     <Content Remove="SupportChat.Core.Data.Services\**" />
     <Content Remove="SupportChat.Core.Data\**" />
     <Content Remove="SupportChat.Core\**" />
     <EmbeddedResource Remove="SupportChat.Core.Data.Contracts\**" />
     <EmbeddedResource Remove="SupportChat.Core.Data.Entities\**" />
+    <EmbeddedResource Remove="SupportChat.Core.Data.Migrations.Sqlite\**" />
     <EmbeddedResource Remove="SupportChat.Core.Data.Repositories\**" />
     <EmbeddedResource Remove="SupportChat.Core.Data.Services\**" />
     <EmbeddedResource Remove="SupportChat.Core.Data\**" />
     <EmbeddedResource Remove="SupportChat.Core\**" />
     <None Remove="SupportChat.Core.Data.Contracts\**" />
     <None Remove="SupportChat.Core.Data.Entities\**" />
+    <None Remove="SupportChat.Core.Data.Migrations.Sqlite\**" />
     <None Remove="SupportChat.Core.Data.Repositories\**" />
     <None Remove="SupportChat.Core.Data.Services\**" />
     <None Remove="SupportChat.Core.Data\**" />
@@ -47,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="SupportChat.Core.Data.Migrations.Sqlite\SupportChat.Core.Data.Migrations.Sqlite.csproj" />
     <ProjectReference Include="SupportChat.Core.Data.Services\SupportChat.Core.Data.Services.csproj" />
     <ProjectReference Include="SupportChat.Core.Data\SupportChat.Core.Data.csproj" />
   </ItemGroup>

@@ -4,12 +4,12 @@ namespace SupportChat.API
 {
     public class ChatServiceApi(IServiceManager serviceManager) : ChatService.ChatServiceBase 
     {
-        IServiceManager ServiceManager = serviceManager;
+        private readonly IServiceManager _serviceManager = serviceManager;
         public override Task<LogsListResponse> GetLogsList(SupportTypeRequest request, ServerCallContext context)
         {
             try
             {
-                var list = ServiceManager.ProblemLogService.GetAllWithIncludedEntities()
+                var list = _serviceManager.ProblemLogService.GetAllWithIncludedEntities()
                     .Select(x => new ProblemLog() {   
                         Id = x.Id,
                         Code = x.Code,
@@ -34,7 +34,7 @@ namespace SupportChat.API
         {
             try
             {
-                var list = ServiceManager.ProblemService.GetAllWithIncludedEntities()
+                var list = _serviceManager.ProblemService.GetAllWithIncludedEntities()
                     .Select(x => new Problem()
                     {
                         Id = x.Id,
